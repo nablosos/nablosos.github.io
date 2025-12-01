@@ -1,821 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      AI Strategist & Data Analytics Consultant Profile - Nabil Mustafa Omar
-    </title>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabil Mustafa Omar | AI Strategist & Consultant</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-      /* Custom font stack for a premium corporate feel */
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          "Segoe UI", sans-serif;
-
-
-
-      }
-      .card-hover {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-      .card-hover:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-      }
-      .icon-badge {
-        transition: transform 0.2s ease, color 0.2s ease;
-      }
-      .group:hover .icon-badge {
-        transform: translateY(-2px);
-        color: rgb(16 185 129);
-      }
-
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
     </style>
-  </head>
-  <body class="bg-slate-100 text-slate-900">
-    <!-- Page wrapper -->
-    <div class="min-h-screen flex flex-col">
-      <!-- Top bar -->
-      <header
-        class="bg-gradient-to-r from-slate-900 via-slate-800 to-emerald-700 text-slate-50 shadow-lg"
-      >
-        <div
-          class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
-        >
-          <div>
-            <p
-              class="text-xs tracking-[0.3em] uppercase text-emerald-300 flex items-center gap-2"
-            >
-              <i class="fa-solid fa-id-badge text-emerald-300 text-sm"></i>
-              <span>Professional Profile</span>
-            </p>
-            <h1
-              class="mt-1 text-2xl md:text-3xl font-semibold tracking-tight flex items-center gap-2"
-            >
-              <span>Nabil Mustafa Omar</span>
-            </h1>
-            <p
-              class="mt-1 text-sm md:text-base text-slate-200 flex flex-wrap items-center gap-2"
-            >
-              <span>AI Strategist</span>
-              <span>·</span>
-              <span>Data Analytics Consultant</span>
-              <span>·</span>
-              <span>Corporate Trainer</span>
-            </p>
-          </div>
-          <div class="text-sm md:text-right space-y-1">
-            <p
-              class="font-medium text-emerald-200 flex items-center md:justify-end gap-2"
-            >
-              <i class="fa-solid fa-magnifying-glass-chart text-xs"></i>
-              <span>AI Strategy | Data Analytics | Corporate Training</span>
-            </p>
-            <p class="text-slate-200 flex items-center md:justify-end gap-2">
-              <i class="fa-solid fa-globe text-xs"></i>
-              <span>GCC Region Focused</span>
-            </p>
-          </div>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-emerald-100 selection:text-emerald-900">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="flex flex-col group">
+                <span class="text-xl font-bold text-slate-900 tracking-tight leading-none group-hover:text-emerald-700 transition-colors">Nabil Mustafa</span>
+                <span class="text-[0.65rem] font-bold text-emerald-600 uppercase tracking-widest mt-1">AI Strategist</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">Services</a>
+                <a href="#methodology" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">Methodology</a>
+                <a href="#testimonials" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">Testimonials</a>
+                <a href="#contact" class="bg-slate-900 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all shadow-lg shadow-slate-900/20">
+                    Book Consultation
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-900 text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-      </header>
+    </nav>
 
-      <!-- Main content -->
-      <main class="flex-1 py-10">
-        <div class="max-w-6xl mx-auto px-6 space-y-8">
-          <!-- Executive Summary -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 overflow-hidden card-hover group"
-          >
-            <div
-              class="border-l-4 border-emerald-500 bg-slate-50 px-6 py-4 flex items-center justify-between"
-            >
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i
-                  class="fa-solid fa-circle-info text-emerald-600 icon-badge"
-                ></i>
-                <span>Executive Summary</span>
-              </h2>
-            </div>
-            <div
-              class="px-6 pb-6 pt-5 text-sm md:text-base leading-relaxed text-slate-800"
-            >
-              <p>
-                I help organisations move beyond AI hype and achieve
-                practical, immediate value. My work focuses on transforming
-                teams into confident AI adopters, building data driven decision
-                cultures, and enabling future leaders, professionals and managers to leverage AI strategically for
-                operational efficiency and competitive advantage.
-              </p>
-            </div>
-          </section>
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent"></div>
+        <div class="absolute -top-[20%] -right-[10%] w-[500px] h-[500px] bg-emerald-100/40 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
-          <!-- Core Value Proposition -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div
-              class="border-b border-slate-100 px-6 py-4 flex items-center justify-between"
-            >
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-bullseye icon-badge"></i>
-                <span>Core Value Proposition</span>
-              </h2>
-            </div>
-            <div class="px-6 pb-6 pt-5 space-y-4 text-sm md:text-base">
-              <div
-                class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 flex gap-3"
-              >
-                <i class="fa-solid fa-lightbulb text-emerald-600 mt-1"></i>
-                <p class="text-slate-800">
-                  Most organisations know AI is important but struggle to bridge
-                  three gaps: <strong> lack of clarity, talent, and
-                  practical implementation </strong>. <br> My value lies in closing these gaps
-                  with an applied, business focused approach.
-                </p>                
-              </div>
-              <div>
-                <h3
-                  class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2"
-                >
-                  <span>What this means for clients</span>
-                </h3>
-                <ul class="grid md:grid-cols-2 gap-2 text-slate-800">
-                  <li class="flex gap-2 items-start">
-                    <i
-                      class="fa-solid fa-check-circle text-emerald-500 mt-0.5"
-                    ></i>
-                    <span
-                      >Clear strategic understanding of AI impact on the
-                      business.</span
-                    >
-                  </li>
-                  <li class="flex gap-2 items-start">
-                    <i class="fa-solid fa-bolt text-emerald-500 mt-0.5"></i>
-                    <span
-                      >Immediate workflow optimisation using AI and automation
-                      tools.</span
-                    >
-                  </li>
-                  <li class="flex gap-2 items-start">
-                    <i
-                      class="fa-solid fa-people-group text-emerald-500 mt-0.5"
-                    ></i>
-                    <span
-                      >Strengthened internal capabilities, reducing vendor
-                      dependency.</span
-                    >
-                  </li>
-                  <li class="flex gap-2 items-start">
-                    <i
-                      class="fa-solid fa-arrows-left-right text-emerald-500 mt-0.5"
-                    ></i>
-                    <span
-                      >Alignment between leadership and operational teams on AI
-                      adoption.</span
-                    >
-                  </li>
-                </ul>
-              </div>
-              <p class="text-sm text-slate-600 italic flex items-center gap-2">
-                <i class="fa-solid fa-circle-check text-emerald-500"></i>
-                <span
-                  >I make AI usable, understandable, and valuable from day
-                  one.</span
-                >
-              </p>
-            </div>
-          </section>
-
-          <!-- Services Overview -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div
-              class="border-b border-slate-100 px-6 py-4 flex items-center justify-between"
-            >
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-layer-group icon-badge"></i>
-                <span>Services Overview</span>
-              </h2>
-            </div>
-            <div
-              class="px-6 pb-6 pt-5 grid gap-6 md:grid-cols-2 text-sm md:text-base"
-            >
-              <!-- Training -->
-              <div>
-                <h3
-                  class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2"
-                >
-
-                  <span>Training</span>
-                </h3>
-                <ul class="space-y-1.5 text-slate-800">
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-bullseye text-emerald-500 text-xs"
-                    ></i>
-                    <span>AI Awareness and Strategic Adoption</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-chart-line text-emerald-500 text-xs"
-                    ></i>
-                    <span>Data Analytics and Dashboarding Bootcamp</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-users-gear text-emerald-500 text-xs"
-                    ></i>
-                    <span>Applied AI for Business Leaders</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-wand-magic-sparkles text-emerald-500 text-xs"
-                    ></i>
-                    <span>Generative AI for Productivity</span>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Consulting -->
-              <div>
-                <h3
-                  class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2"
-                >
-
-                  <span>Consulting</span>
-                </h3>
-                <ul class="space-y-1.5 text-slate-800">
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-diagram-project text-emerald-500 text-xs"
-                    ></i>
-                    <span>AI Strategy and Digital Transformation</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i
-                      class="fa-solid fa-database text-emerald-500 text-xs"
-                    ></i>
-                    <span>Data Analytics and Business Intelligence</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i class="fa-solid fa-gears text-emerald-500 text-xs"></i>
-                    <span>Workflow Automation and Efficiency Mapping</span>
-                  </li>
-                  <li class="flex gap-2 items-center">
-                    <i class="fa-solid fa-route text-emerald-500 text-xs"></i>
-                    <span>AI Adoption Roadmaps and Implementation Support</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-
-          <!-- Partners & Clients / Industries -->
-          <section class="grid gap-6 md:grid-cols-2">
-            <!-- Partners -->
-            <div
-              class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-            >
-              <div class="border-b border-slate-100 px-6 py-4">
-                <h2
-                  class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-                >
-                  <i class="fa-solid fa-handshake icon-badge"></i>
-                  <span>Partners and Clients</span>
-                </h2>
-              </div>
-              <div class="px-6 pb-6 pt-5 space-y-3 text-sm md:text-base">
-                <p class="text-slate-700 text-sm flex items-center gap-2">
-                  <i class="fa-solid fa-building text-emerald-600"></i>
-                  <span
-                    >Trusted by organisations across the GCC and beyond.</span
-                  >
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-[1.4fr,1fr] gap-12 items-center relative">
+            <div class="space-y-8 animate-fade-in-up">
+                <div class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-emerald-700 uppercase bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-100 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Serving the GCC Region
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+                    AI Strategy. <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
+                        Applied Value.
+                    </span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl">
+                    I transform organisations into confident AI adopters. No fluff, no academic jargon, just strategic clarity and data-driven results for GCC leaders.
                 </p>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Emile Woolf International
-                  </span>
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Qatar Energy
-                  </span>
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Etihad Airways
-                  </span>
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Faze3 Consulting
-                  </span>
-                  <span
-                  class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                >
-
-                  Informa Connect Academy
-                </span>
-
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Al Qasimia University
-                  </span>
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Kadir Has University
-                  </span>
-                  <span
-                    class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-1"
-                  >
-
-                    Apostrophe Education
-                  </span>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-slate-900 text-white px-7 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-1">
+                        Start Your Transformation 
+                        <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                    </a>
+                    <a href="Nabil_Mustafa_CV.pdf" target="_blank" download class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-7 py-4 rounded-xl font-semibold hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
+                        <i class="fa-solid fa-file-arrow-down text-emerald-500 group-hover:text-emerald-600"></i>
+                        Download Profile
+                    </a>
                 </div>
-                <p class="text-xs text-slate-500 mt-2">
-                  Detailed scopes of work available on request.
-                </p>
-              </div>
+
+                <div class="pt-8 border-t border-slate-100 flex gap-12">
+                    <div>
+                        <p class="text-3xl font-bold text-emerald-600">10+</p>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">GCC Enterprises</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-emerald-600">100+</p>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Leaders Trained</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-emerald-600">100%</p>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Execution Focused</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Industries -->
-            <div
-              class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-            >
-              <div class="border-b border-slate-100 px-6 py-4">
-                <h2
-                  class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-                >
-                  <i class="fa-solid fa-industry icon-badge"></i>
-                  <span>Industries Served</span>
-                </h2>
-              </div>
-              <div class="px-6 pb-6 pt-5 text-sm md:text-base space-y-3">
-                <p class="text-slate-700 text-sm flex items-center gap-2">
-
-                  <span
-                    >Experience delivering AI and data focused sessions across
-                    multiple sectors:</span
-                  >
-                </p>
-                <ul class="space-y-1.5 text-slate-800">
-                  <li class="flex items-center gap-2">
-                    <i class="fa-solid fa-droplet text-emerald-500"></i>
-                    <span>Energy</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fa-solid fa-book-open text-emerald-500"></i>
-                    <span>Education</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i
-                      class="fa-solid fa-prescription-bottle-medical text-emerald-500"
-                    ></i>
-                    <span>Pharmacy and Life Sciences</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fa-solid fa-scale-balanced text-emerald-500"></i>
-                    <span>Accounting and Professional Services</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fa-solid fa-jet-fighter text-emerald-500"></i>
-                    <span>Aviation</span>
-                  </li>
-                </ul>
-              </div>
+            <div class="relative hidden md:block">
+                <div class="aspect-[4/5] relative rounded-2xl overflow-hidden border border-slate-100 shadow-2xl shadow-slate-200 rotate-1 hover:rotate-0 transition-transform duration-500 group">
+                    <img 
+                        src="./suit-professional-nobg-clear.png" 
+                        alt="Nabil Mustafa Omar"
+                        class="object-cover w-full h-full bg-slate-100"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-8 left-8 text-white">
+                        <p class="font-bold text-2xl">Nabil Mustafa</p>
+                        <p class="text-emerald-300 font-medium">AI Strategist & Consultant</p>
+                    </div>
+                </div>
             </div>
-          </section>
-
-          <!-- Delivery Methodology -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div class="border-b border-slate-100 px-6 py-4">
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-diagram-next icon-badge"></i>
-                <span>Delivery Methodology</span>
-              </h2>
-            </div>
-            <div class="px-6 pb-6 pt-5 space-y-4 text-sm md:text-base">
-              <p class="text-slate-700 text-sm flex items-center gap-2">
-                <i class="fa-solid fa-sitemap text-emerald-600"></i>
-                <span
-                  >A structured framework designed for clarity, adoption, and
-                  measurable outcomes.</span
-                >
-              </p>
-              <div class="grid md:grid-cols-4 gap-4 text-sm">
-                <div
-                  class="bg-slate-50 border border-slate-200 rounded-xl p-4 group/card"
-                >
-                  <p
-                    class="text-xs font-semibold text-emerald-700 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-magnifying-glass-chart text-xs"></i>
-                    <span>01 · Discovery</span>
-                  </p>
-                  <p class="font-medium mb-1 text-slate-900">Assessment</p>
-                  <p class="text-xs text-slate-700">
-                    Understand business priorities, maturity, and operational
-                    gaps.
-                  </p>
-                </div>
-                <div
-                  class="bg-slate-50 border border-slate-200 rounded-xl p-4 group/card"
-                >
-                  <p
-                    class="text-xs font-semibold text-emerald-700 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-pen-ruler text-xs"></i>
-                    <span>02 · Design</span>
-                  </p>
-                  <p class="font-medium mb-1 text-slate-900">
-                    Tailored Program
-                  </p>
-                  <p class="text-xs text-slate-700">
-                    Build sessions around your industry, teams, and objectives.
-                  </p>
-                </div>
-                <div
-                  class="bg-slate-50 border border-slate-200 rounded-xl p-4 group/card"
-                >
-                  <p
-                    class="text-xs font-semibold text-emerald-700 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-play text-xs"></i>
-                    <span>03 · Delivery</span>
-                  </p>
-                  <p class="font-medium mb-1 text-slate-900">
-                    Applied Execution
-                  </p>
-                  <p class="text-xs text-slate-700">
-                    Use real tools, data, and use cases for hands on adoption.
-                  </p>
-                </div>
-                <div
-                  class="bg-slate-50 border border-slate-200 rounded-xl p-4 group/card"
-                >
-                  <p
-                    class="text-xs font-semibold text-emerald-700 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-plug-circle-check text-xs"></i>
-                    <span>04 · Integration</span>
-                  </p>
-                  <p class="font-medium mb-1 text-slate-900">Follow Through</p>
-                  <p class="text-xs text-slate-700">
-                    Support, templates, and guidance to embed AI into daily
-                    work.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Signature Programs -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div class="border-b border-slate-100 px-6 py-4">
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-star icon-badge"></i>
-                <span>Signature Programs</span>
-              </h2>
-            </div>
-            <div
-              class="px-6 pb-6 pt-5 grid md:grid-cols-2 gap-4 text-sm md:text-base"
-            >
-              <div
-                class="border border-slate-200 rounded-xl p-4 bg-slate-50 flex gap-3"
-              >
-                <i class="fa-solid fa-chess-king text-emerald-600 mt-1"></i>
-                <div>
-                  <h3 class="font-semibold text-slate-900 mb-1">
-                    AI Awareness and Strategic Adoption
-                  </h3>
-                  <p class="text-xs text-slate-700">
-                    Executive focused program to align leadership on AI
-                    opportunities, risks, and next steps.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="border border-slate-200 rounded-xl p-4 bg-slate-50 flex gap-3"
-              >
-                <i class="fa-solid fa-chart-line text-emerald-600 mt-1"></i>
-                <div>
-                  <h3 class="font-semibold text-slate-900 mb-1">
-                    Data Analytics and Dashboarding Bootcamp
-                  </h3>
-                  <p class="text-xs text-slate-700">
-                    Practical bootcamp to upskill teams in analytics, reporting,
-                    and decision dashboards.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="border border-slate-200 rounded-xl p-4 bg-slate-50 flex gap-3"
-              >
-                <i class="fa-solid fa-user-tie text-emerald-600 mt-1"></i>
-                <div>
-                  <h3 class="font-semibold text-slate-900 mb-1">
-                    Applied AI for Business Leaders
-                  </h3>
-                  <p class="text-xs text-slate-700">
-                    Strategic AI program tailored to non technical leaders
-                    responsible for growth and efficiency.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="border border-slate-200 rounded-xl p-4 bg-slate-50 flex gap-3"
-              >
-                <i
-                  class="fa-solid fa-wand-magic-sparkles text-emerald-600 mt-1"
-                ></i>
-                <div>
-                  <h3 class="font-semibold text-slate-900 mb-1">
-                    Generative AI for Productivity
-                  </h3>
-                  <p class="text-xs text-slate-700">
-                    Hands on exploration of generative AI tools to streamline
-                    workflows and knowledge work.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Case Studies & Outcomes -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div class="border-b border-slate-100 px-6 py-4">
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-chart-column icon-badge"></i>
-                <span>Case Studies and Outcomes</span>
-              </h2>
-            </div>
-            <div class="px-6 pb-6 pt-5 space-y-4 text-sm md:text-base">
-              <p class="text-slate-700 text-sm flex items-center gap-2">
-                <i class="fa-solid fa-gauge-high text-emerald-600"></i>
-                <span>Real business impact delivered across industries.</span>
-              </p>
-              <div class="grid md:grid-cols-3 gap-4 text-xs md:text-sm">
-                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                  <p
-                    class="font-semibold text-slate-900 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-chess-board text-emerald-600"></i>
-                    <span>AI Strategy Workshop</span>
-                  </p>
-                  <p class="text-slate-700">
-                    Executives gained clarity on AI priorities and mapped
-                    strategic initiatives for the next twelve to eighteen
-                    months.
-                  </p>
-                </div>
-                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                  <p
-                    class="font-semibold text-slate-900 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-gears text-emerald-600"></i>
-                    <span>Analytics Upskilling</span>
-                  </p>
-                  <p class="text-slate-700">
-                    Teams improved reporting speed, reduced manual effort, and
-                    automated key dashboards.
-                  </p>
-                </div>
-                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                  <p
-                    class="font-semibold text-slate-900 mb-1 flex items-center gap-2"
-                  >
-                    <i class="fa-solid fa-robot text-emerald-600"></i>
-                    <span>Automation Assessment</span>
-                  </p>
-                  <p class="text-slate-700">
-                    Identified high value automation opportunities leading to
-                    measurable efficiency gains.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Testimonials -->
-          <section
-            class="bg-white shadow-sm rounded-2xl border border-slate-200 card-hover group"
-          >
-            <div class="border-b border-slate-100 px-6 py-4">
-              <h2
-                class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-              >
-                <i class="fa-solid fa-comments icon-badge"></i>
-                <span>Testimonials</span>
-              </h2>
-            </div>
-            <div class="px-6 pb-6 pt-5 text-sm md:text-base space-y-3">
-
-              <div
-                class="border border-slate-200 rounded-xl p-4 bg-slate-50 relative"
-              >
-                <i
-                  class="fa-solid fa-quote-left text-emerald-500 text-xl absolute -top-3 -left-3"
-                ></i>
-                <p class="text-sm italic text-slate-800 mt-1">
-                  “Nabil delivered highly practical sessions that helped our
-                  teams understand and apply AI in their day to day roles.”
-                </p>
-                <p class="mt-2 text-xs text-slate-500 flex items-center gap-2">
-                  <i class="fa-solid fa-user text-emerald-500"></i>
-                  <span>Academic Staff, Al Qasimia University</span>
-                </p>
-              </div>
-
-              <div
-              class="border border-slate-200 rounded-xl p-4 bg-slate-50 relative"
-            >
-              <i
-                class="fa-solid fa-quote-left text-emerald-500 text-xl absolute -top-3 -left-3"
-              ></i>
-              <p class="text-sm italic text-slate-800 mt-1">
-                “Over the 4-day course, the trainer have taught the class effectively and have improved my knowledge around data analysis 
-                tremendously that will be very useful.”
-              </p>
-              <p class="mt-2 text-xs text-slate-500 flex items-center gap-2">
-                <i class="fa-solid fa-user text-emerald-500"></i>
-                <span>Executive Participant, Qatar Energy</span>
-              </p>
-            </div>
-
-            <div
-            class="border border-slate-200 rounded-xl p-4 bg-slate-50 relative"
-          >
-            <i
-              class="fa-solid fa-quote-left text-emerald-500 text-xl absolute -top-3 -left-3"
-            ></i>
-            <p class="text-sm italic text-slate-800 mt-1">
-              “One of the best trainer, he kept all engaged during the sessions.”
-            </p>
-            <p class="mt-2 text-xs text-slate-500 flex items-center gap-2">
-              <i class="fa-solid fa-user text-emerald-500"></i>
-              <span>Executive Delegate, GCC Partner</span>
-            </p>
-          </div>
-
-            </div>
-          </section>
-
- <!-- Professional Bio & Contact -->
-<section class="grid gap-6 md:grid-cols-[2fr,1.2fr] card-hover">
-
-  <!-- Bio -->
-  <div class="bg-white shadow-sm rounded-2xl border border-slate-200">
-    <div class="border-b border-slate-100 px-6 py-4">
-      <h2
-        class="text-xs tracking-[0.3em] uppercase text-slate-500 font-semibold flex items-center gap-2"
-      >
-        <i class="fa-solid fa-user-pen icon-badge"></i>
-        <span>Professional Bio</span>
-      </h2>
-    </div>
-
-    <!-- IMAGE + TEXT horizontal layout -->
-    <div class="px-6 pb-6 pt-5 text-sm md:text-base">
-      <div class="flex flex-col md:flex-row md:items-start md:gap-6">
-
-        <!-- Portrait Frame -->
-        <div
-          class="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white w-full md:w-48 flex-shrink-0 mb-4 md:mb-0"
-        >
-          <img
-            src="https://media.licdn.com/dms/image/v2/D4D03AQH8HzXvHw1S5Q/profile-displayphoto-shrink_200_200/B4DZcuit_vHMAY-/0/1748832543925?e=1764806400&v=beta&t=onMMro-ahgSv-Mfg2arFQjPtzqeAVGGH-wCKvX3rQ-Y"
-            alt="Portrait of Nabil Mustafa Omar"
-            class="w-full h-auto object-cover"
-          />
         </div>
+    </section>
 
-        <!-- Bio Text -->
-        <div class="space-y-3 flex-1">
-          <p class="text-slate-800">
-            Nabil is an AI Strategist and Data Analytics Consultant
-            serving organisations across the GCC. With a Masters in Computer Engineering and many Data Analytics certifications, he is known for transforming
-            complex topics into practical frameworks that unlock immediate
-            business value.
-          </p>
-
-          <p class="text-slate-800">
-            Nabil works with both executives and operational teams to adopt AI
-            confidently and strategically. His style is premium, authoritative,
-            and entirely focused on measurable outcomes.
-          </p>
+    <section class="py-10 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-slate-400 text-xs font-bold tracking-[0.2em] uppercase mb-8">Trusted by Industry Leaders</p>
+            <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <span class="text-xl font-bold text-slate-200 font-serif">Qatar Energy</span>
+                <span class="text-xl font-bold text-slate-200 font-serif">Etihad Airways</span>
+                <span class="text-xl font-bold text-slate-200 font-serif">Al Qasimia University</span>
+                <span class="text-xl font-bold text-slate-200 font-serif">Informa Connect</span>
+                <span class="text-xl font-bold text-slate-200 font-serif">Kadir Has University</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Contact -->
-  <div
-    class="bg-slate-900 text-slate-50 shadow-sm rounded-2xl border border-slate-800 flex flex-col justify-between group"
-  >
-    <div class="px-6 pt-5 pb-4">
-      <h2
-        class="text-xs tracking-[0.3em] uppercase text-emerald-300 font-semibold flex items-center gap-2"
-      >
-        <i class="fa-solid fa-address-card icon-badge"></i>
-        <span>Contact Information</span>
-      </h2>
-      <div class="mt-4 space-y-2 text-sm">
-        <a href="mailto:hello@consultnabil.com">
-          <p class="flex items-center gap-2">
-            <i class="fa-solid fa-envelope text-emerald-300"></i>
-            <span class="font-medium text-slate-100">Email:</span>
-            <span class="text-slate-200">hello@consultnabil.com</span>
-          </p>
-        </a>
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-widest uppercase mb-3 border border-emerald-200">The Gap</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Most AI Initiatives Fail. Here's Why.</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 text-lg text-slate-700 leading-relaxed">
+                    <p>
+                        Organizations know AI is critical, but they struggle to bridge the gap between <strong class="text-slate-900 bg-emerald-100 px-1">high-level strategy</strong> and <strong class="text-slate-900 bg-emerald-100 px-1">daily operations</strong>.
+                    </p>
+                    <p>
+                        They lack internal talent, clarity on use cases, and practical implementation roadmaps. My value lies in closing these gaps with an applied, business-focused approach.
+                    </p>
+                    
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1.5 text-lg"></i>
+                            <span class="font-medium">Clear strategic understanding of AI impact.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1.5 text-lg"></i>
+                            <span class="font-medium">Immediate workflow optimisation using automation.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1.5 text-lg"></i>
+                            <span class="font-medium">Alignment between leadership and operational teams.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-star text-emerald-500"></i> Signature Programs
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-300 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 text-emerald-700 font-bold text-sm">01</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">AI Strategy Workshop</h4>
+                                <p class="text-sm text-slate-500 mt-1">Executive alignment on risks & opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-300 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 text-emerald-700 font-bold text-sm">02</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Data Analytics Bootcamp</h4>
+                                <p class="text-sm text-slate-500 mt-1">Upskilling teams in PowerBI & Python.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-5 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-300 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 text-emerald-700 font-bold text-sm">03</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Applied AI for Leaders</h4>
+                                <p class="text-sm text-slate-500 mt-1">Non-technical adoption frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p class="flex items-center gap-2">
-          <i class="fa-solid fa-location-dot text-emerald-300"></i>
-          <span class="font-medium text-slate-100">Location:</span>
-          <span class="text-slate-200">UAE and GCC Region</span>
-        </p>
-        <p class="flex items-center gap-2">
-          <i class="fa-brands fa-linkedin text-emerald-300"></i>
-          <span class="font-medium text-slate-100">LinkedIn:</span>
-          <span class="text-slate-200"><a href="https://www.linkedin.com/in/nabil-mustafa/">/nabil-mustafa</span>
-        </p>
-      </div>
-    </div>
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-widest uppercase mb-3 border border-emerald-200">Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Consulting & Training Services</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-layer-group text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI Strategy & Transformation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Defining the roadmap, governance, and infrastructure required to scale AI across the enterprise.</p>
+                </div>
+                
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-chart-line text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Data Analytics & BI</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Building decision cultures through interactive dashboards, accurate reporting, and data storytelling.</p>
+                </div>
+                
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-users-gear text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Corporate Training</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Customised bootcamps ranging from 'AI Awareness for Execs' to deep-dive technical workshops.</p>
+                </div>
 
-    <div
-      class="px-6 pb-5 pt-3 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between gap-3"
-    >
-      <p class="flex-1">
-        Help me derive business value from AI and Data Analytics.
-      </p>
-      <a
-        href="https://wa.link/k161ui"
-        class="inline-flex items-center gap-2 text-emerald-300 hover:text-emerald-100 text-xs font-medium transition-transform duration-200 transform hover:translate-x-0.5"
-      >
-        <span>Book a discussion</span>
-        <i class="fa-solid fa-arrow-right-long text-[0.7rem]"></i>
-      </a>
-    </div>
-  </div>
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-industry text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Workflow Automation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mapping operational inefficiencies and deploying automated solutions to recover lost time.</p>
+                </div>
 
-</section>
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-building text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Adoption Roadmaps</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Structured implementation plans that ensure technology is actually used by your workforce.</p>
+                </div>
 
-<!-- Footer -->
-<footer
-  class="mt-auto border-t border-slate-200 bg-slate-50"
->
-  <div
-    class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-slate-500"
-  >
-    <p class="flex items-center gap-2">
-      <i class="fa-regular fa-registered text-[0.7rem]"></i>
-      <span>
-        AI Strategist and Data Analytics Consultant Profile · Nabil Mustafa Omar
-      </span>
-    </p>
+                <div class="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fa-solid fa-handshake text-2xl text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Executive Advisory</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Ongoing mentorship for leadership teams navigating the complexities of the digital era.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p class="flex items-center gap-2">
-      <i class="fa-solid fa-city text-[0.7rem]"></i>
-      <span>Designed for corporate clients in the GCC region.</span>
-    </p>
-  </div>
-</footer>
+    <section id="methodology" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-widest uppercase mb-3 border border-emerald-200">The Process</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Delivery Methodology</h2>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute left-8 top-6 bottom-6 w-0.5 border-l-2 border-dashed border-slate-200 md:hidden -z-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative group hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center text-xl font-bold shadow-lg absolute -top-4 left-6 group-hover:scale-110 transition-transform">01</div>
+                        <div class="pt-8">
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Discovery</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Assessment of business maturity, priorities, and operational gaps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative group hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center text-xl font-bold shadow-lg absolute -top-4 left-6 group-hover:scale-110 transition-transform">02</div>
+                        <div class="pt-8">
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Design</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Tailoring the program content to your specific industry and teams.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative group hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center text-xl font-bold shadow-lg absolute -top-4 left-6 group-hover:scale-110 transition-transform">03</div>
+                        <div class="pt-8">
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Delivery</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Applied execution using real data and live tools, not just theory.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative group hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center text-xl font-bold shadow-lg absolute -top-4 left-6 group-hover:scale-110 transition-transform">04</div>
+                        <div class="pt-8">
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Integration</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Follow-through support to ensure adoption and measurable outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-  </body>
+    <section id="testimonials" class="py-24 bg-emerald-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#10b981 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="mb-12">
+                <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2 block">Impact</span>
+                <h2 class="text-3xl font-bold">What Clients Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-700/50 relative backdrop-blur-sm">
+                    <i class="fa-solid fa-quote-left text-emerald-500/30 text-4xl absolute top-6 right-6"></i>
+                    <p class="text-emerald-50 italic mb-6 relative z-10 leading-relaxed text-sm md:text-base">"Nabil delivered highly practical sessions that helped our teams understand and apply AI in their day-to-day roles."</p>
+                    <div class="border-t border-emerald-700/50 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-800 flex items-center justify-center text-emerald-300"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Academic Staff</p>
+                            <p class="text-xs text-emerald-400">Al Qasimia University</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-700/50 relative backdrop-blur-sm">
+                    <i class="fa-solid fa-quote-left text-emerald-500/30 text-4xl absolute top-6 right-6"></i>
+                    <p class="text-emerald-50 italic mb-6 relative z-10 leading-relaxed text-sm md:text-base">"Over the 4-day course, the trainer improved my knowledge around data analysis tremendously. Very useful."</p>
+                    <div class="border-t border-emerald-700/50 pt-4 flex items-center gap-3">
+                         <div class="w-10 h-10 rounded-full bg-emerald-800 flex items-center justify-center text-emerald-300"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Executive Participant</p>
+                            <p class="text-xs text-emerald-400">Qatar Energy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-700/50 relative backdrop-blur-sm">
+                    <i class="fa-solid fa-quote-left text-emerald-500/30 text-4xl absolute top-6 right-6"></i>
+                    <p class="text-emerald-50 italic mb-6 relative z-10 leading-relaxed text-sm md:text-base">"One of the best trainers. He kept everyone engaged throughout the sessions."</p>
+                    <div class="border-t border-emerald-700/50 pt-4 flex items-center gap-3">
+                         <div class="w-10 h-10 rounded-full bg-emerald-800 flex items-center justify-center text-emerald-300"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Executive Delegate</p>
+                            <p class="text-xs text-emerald-400">GCC Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-white text-2xl font-bold mb-6">Let's Discuss Your Strategy</h3>
+                <p class="mb-8 leading-relaxed max-w-md">
+                    Ready to move beyond the hype? Contact me to discuss how we can tailor an AI or Analytics roadmap for your organization.
+                </p>
+                <div class="space-y-5">
+                    <a href="mailto:hello@consultnabil.com" class="flex items-center gap-4 hover:text-emerald-400 transition-colors group">
+                        <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i class="fa-solid fa-envelope text-sm"></i>
+                        </div>
+                        <span class="text-lg">hello@consultnabil.com</span>
+                    </a>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-800">
+                            <i class="fa-solid fa-location-dot text-sm"></i>
+                        </div>
+                        <span class="text-lg">Sharjah, United Arab Emirates</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img 
+                            src="https://media.licdn.com/dms/image/v2/D4D03AQH8HzXvHw1S5Q/profile-displayphoto-shrink_200_200/B4DZcuit_vHMAY-/0/1748832543925?e=1764806400&v=beta&t=onMMro-ahgSv-Mfg2arFQjPtzqeAVGGH-wCKvX3rQ-Y" 
+                            alt="Nabil Mini"
+                            class="w-16 h-16 rounded-full border-2 border-slate-700 object-cover"
+                        >
+                        <div>
+                            <p class="text-white font-bold text-lg">Nabil Mustafa Omar</p>
+                            <a href="https://www.linkedin.com/in/nabil-mustafa/" target="_blank" class="text-emerald-400 text-sm flex items-center gap-2 hover:underline mt-1">
+                                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                            </a>
+                            <a href="Nabil_Mustafa_CV.pdf" target="_blank" download class="text-emerald-400 text-sm flex items-center gap-2 hover:underline mt-2">
+                                <i class="fa-solid fa-file-pdf"></i> Download Resume / CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-slate-800">
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        © 2025 Nabil Mustafa Omar. All rights reserved.<br>
+                        Designed for corporate clients in the GCC.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('glass-nav', 'py-3');
+                navbar.classList.remove('bg-transparent', 'py-5');
+            } else {
+                navbar.classList.remove('glass-nav', 'py-3');
+                navbar.classList.add('bg-transparent', 'py-5');
+            }
+        });
+    </script>
+</body>
 </html>
