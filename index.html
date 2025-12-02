@@ -14,7 +14,6 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / WhatsApp / LinkedIn -->
-    <!-- Crucial for the image preview in chats -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-website-url.com">
     <meta property="og:title" content="Nabil Mustafa Omar | AI Strategist & Consultant">
@@ -77,12 +76,13 @@
 <body class="bg-slate-50 text-slate-900 font-sans selection:bg-emerald-100 selection:text-emerald-900">
 
     <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
-        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between relative">
             <a href="#" class="flex flex-col group">
                 <span class="text-xl font-bold text-slate-900 tracking-tight leading-none group-hover:text-emerald-700 transition-colors">Nabil Mustafa</span>
                 <span class="text-[0.65rem] font-bold text-emerald-600 uppercase tracking-widest mt-1">AI Strategist</span>
             </a>
             
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
                 <a href="#about" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">About</a>
                 <a href="#services" class="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors">Services</a>
@@ -93,9 +93,23 @@
                 </a>
             </div>
 
-            <button class="md:hidden text-slate-900 text-xl">
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-900 text-xl p-2 focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xl md:hidden transition-all duration-300">
+            <div class="flex flex-col items-center py-8 space-y-6">
+                <a href="#about" class="text-lg font-medium text-slate-700 hover:text-emerald-700" onclick="toggleMenu()">About</a>
+                <a href="#services" class="text-lg font-medium text-slate-700 hover:text-emerald-700" onclick="toggleMenu()">Services</a>
+                <a href="#methodology" class="text-lg font-medium text-slate-700 hover:text-emerald-700" onclick="toggleMenu()">Methodology</a>
+                <a href="#testimonials" class="text-lg font-medium text-slate-700 hover:text-emerald-700" onclick="toggleMenu()">Testimonials</a>
+                <a href="#contact" class="bg-slate-900 text-white text-lg font-semibold px-8 py-3 rounded-xl shadow-lg" onclick="toggleMenu()">
+                    Book Consultation
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -453,7 +467,10 @@
 
     <script>
         const navbar = document.getElementById('navbar');
-        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Scroll effect
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
                 navbar.classList.add('glass-nav', 'py-3');
@@ -463,6 +480,16 @@
                 navbar.classList.add('bg-transparent', 'py-5');
             }
         });
+
+        // Toggle Mobile Menu
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to close menu when a link is clicked
+        function toggleMenu() {
+            mobileMenu.classList.add('hidden');
+        }
     </script>
 </body>
 </html>
